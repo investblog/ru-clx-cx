@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'self'" />
+    <title>Открытый код clx: счётчик и сокращатель ссылок — clx</title>
+    <meta name="google-site-verification" content="nnNTBc0aJDgV3xTwDc5bSiOmDh_I5edqGmbY_PqYSdM" />
+    <meta name="description" content="clx — открытый код под AGPL-3.0: сервис, воркер, который он ставит в ваш аккаунт Cloudflare, и сайт. Проверьте, что работает у вас, или запустите свой clx." />
+    <link rel="canonical" href="https://ru.clx.cx/open-source" />
+    <link rel="alternate" hreflang="x-default" href="https://clx.cx/open-source" />
+    <link rel="alternate" hreflang="en" href="https://clx.cx/open-source" />
+    <link rel="alternate" hreflang="ru" href="https://ru.clx.cx/open-source" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="clx" />
+    <meta property="og:title" content="Открытый код clx: счётчик и сокращатель ссылок — clx" />
+    <meta property="og:description" content="clx — открытый код под AGPL-3.0: сервис, воркер, который он ставит в ваш аккаунт Cloudflare, и сайт. Проверьте, что работает у вас, или запустите свой clx." />
+    <meta property="og:url" content="https://ru.clx.cx/open-source" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="https://clx.cx/og/ru/open-source.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Открытый код clx: счётчик и сокращатель ссылок — clx" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="Открытый код clx: счётчик и сокращатель ссылок — clx" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"clx","item":"https://ru.clx.cx/"},{"@type":"ListItem","position":2,"name":"Открытый код clx: счётчик и сокращатель ссылок","item":"https://ru.clx.cx/open-source"}]}]}</script>
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/app.css" />
+    <script src="/theme.js"></script>
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+<header class="topbar">
+  <div class="topbar__inner">
+    <p class="brand"><a href="/"><svg class="icon brand__mark" aria-hidden="true"><use href="/icons.svg#i-mono-clx"></use></svg><span>clx</span></a></p>
+    <nav class="site-nav" id="site-nav" aria-label="Меню"><a href="/analytics">Аналитика</a><a href="/short-links">Короткие ссылки</a><a href="/for-site-generators">Для генераторов сайтов</a><a href="/pricing">Тарифы</a><a href="/faq">Вопросы</a></nav>
+    <details class="lang-dd" id="lang-dd"><summary class="lang-dd__btn" aria-label="Язык: Русский"><span class="lang-dd__flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333"><path fill="#FFF" d="M0 85.33v341.332h512V85.33z"/><path fill="#0052B4" d="M0 85.333h512V426.67H0z"/><path fill="#FFF" d="M0 85.333h512v113.775H0z"/><path fill="#D80027" d="M0 312.884h512v113.775H0z"/></svg></span>RU</summary><div class="lang-dd__menu"><a class="lang-dd__item" href="https://clx.cx/open-source" hreflang="en" lang="en" data-locale="en"><span class="lang-dd__flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342"><g fill="#FFF"><path d="M0 0h513v341.3H0V0z"/><path d="M311.7 230 513 341.3v-31.5L369.3 230h-57.6zM200.3 111.3 0 0v31.5l143.7 79.8h56.6z"/></g><g fill="#012169"><path d="M393.8 230 513 295.7V230H393.8zm-82.1 0L513 341.3v-31.5L369.3 230h-57.6zm146.9 111.3-147-81.7v81.7h147zM90.3 230 0 280.2V230h90.3zm110 14.2v97.2H25.5l174.8-97.2zM118.2 111.3 0 45.6v65.7h118.2zm82.1 0L0 0v31.5l143.7 79.8h56.6zM53.4 0l147 81.7V0h-147zM421.7 111.3 513 61.1v50.2h-91.3zm-110-14.2V0h174.9L311.7 97.1z"/></g><g fill="#c8102e"><path d="M288 0h-64v138.7H0v64h224v138.7h64V202.7h224v-64H288V0z"/><path d="M311.7 230 513 341.3v-31.5L369.3 230h-57.6zM143.7 230 0 309.9v31.5L200.3 230h-56.6zM200.3 111.3 0 0v31.5l143.7 79.8h56.6zM368.3 111.3 513 31.5V0L311.7 111.3h56.6z"/></g></svg></span>English</a><a class="lang-dd__item" href="/open-source" hreflang="ru" lang="ru" data-locale="ru" aria-current="true"><span class="lang-dd__flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 85.333 512 341.333"><path fill="#FFF" d="M0 85.33v341.332h512V85.33z"/><path fill="#0052B4" d="M0 85.333h512V426.67H0z"/><path fill="#FFF" d="M0 85.333h512v113.775H0z"/><path fill="#D80027" d="M0 312.884h512v113.775H0z"/></svg></span>Русский</a></div></details>
+    <button type="button" class="btn-close" id="theme" aria-label="Сменить тему" title="Сменить тему"><svg class="icon" aria-hidden="true"><use href="/icons.svg#i-mono-theme-light-dark"></use></svg></button>
+    <a class="btn btn--ghost btn--sm when-signed-out" href="https://clx.cx/ru/signin#login">Войти</a><a class="btn btn--ghost btn--sm when-signed-in" href="https://clx.cx/ru/app">Кабинет</a>
+    <button type="button" class="btn-close site-nav__toggle" id="site-nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Меню"><svg class="icon" aria-hidden="true"><use href="/icons.svg#i-mono-menu"></use></svg></button>
+  </div>
+</header>
+<main class="site-main">
+<section class="hero hero--home">
+  <h1>Открытый код clx</h1>
+  <p class="lead">Сервис clx.cx, воркер, который он ставит в ваш аккаунт Cloudflare, и этот сайт — один публичный репозиторий под AGPL-3.0. Проверьте, что работает в вашем аккаунте, или запустите свой clx.</p>
+  <p class="actions"><a class="btn btn--primary btn--lg" href="https://clx.cx/ru/signin#register">Начать бесплатно</a></p>
+</section>
+<section class="home-section">
+  <div class="features"><div class="card feature"><h2 class="h3">AGPL-3.0</h2><p>Код можно читать, менять и запускать. Если вы даёте изменённую копию другим как сервис, её пользователи тоже получают исходный код.</p></div><div class="card feature"><h2 class="h3">Что работает в вашем аккаунте</h2><p>Воркер собирается из папки edge/ репозитория; собранный бандл коммитится со своим sha256, а рядом — список всех когда-либо выпущенных. clx заменяет или удаляет воркер в вашем аккаунте, только если его код — один из них.</p></div><div class="card feature"><h2 class="h3">Свой clx</h2><p>Сам clx.cx — это Worker с базой D1 и пространством KV: копию запускает один аккаунт Cloudflare, с тем же кабинетом, API и воркером для аккаунтов ваших пользователей.</p></div><div class="card feature"><h2 class="h3">Библиотека QR-кодов</h2><p>QR-коды рисует @spintax/qr-svg — отдельная библиотека в npm под лицензией MIT, без собственных зависимостей.</p></div></div>
+  <p class="see-also"><a href="/how-it-works">Как это работает →</a><a href="/for-site-generators">Для генераторов сайтов →</a></p>
+</section>
+<section class="home-section home-api">
+  <div>
+    <h2>Запустить свою копию</h2>
+    <p>Нужны Node.js 22 и pnpm. Все шаги, включая секреты, — в README.</p>
+  </div>
+  <pre class="code"><code>git clone https://github.com/investblog/clx &amp;&amp; cd clx
+pnpm install
+node scripts/wrangler.mjs login
+node scripts/wrangler.mjs d1 create clx
+node scripts/wrangler.mjs kv namespace create SESSIONS
+cp wrangler.example.jsonc wrangler.jsonc   # ваш маршрут, id, HOOK_URL
+node scripts/wrangler.mjs d1 migrations apply clx --remote
+node scripts/secrets.mjs JWT_SECRET
+node scripts/secrets.mjs MASTER_KEYS
+pnpm run deploy
+node scripts/user.mjs add you@example.com</code></pre>
+</section>
+<section class="home-section final-slot">
+  <div class="promo promo--clx">
+    <span class="promo__glow" aria-hidden="true"></span>
+    <span class="promo__mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="#4D48ED"/><g transform="translate(14 14) scale(0.72)"><path d="M64 5H91Q95 5 95 9V36Q95 38 93.6 39.4L39.4 93.6Q38 95 36 95H9Q5 95 5 91V64Q5 62 6.4 60.6L60.6 6.4Q62 5 64 5Z" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/><g fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M45.76 -1H19.51L-1 19.51V45.76L11 33.76V24.49L24.49 11H33.76Z"/><path d="M45.76 -1H19.51L-1 19.51V45.76L11 33.76V24.49L24.49 11H33.76Z" transform="rotate(180 50 50)"/></g></g></svg></span>
+    <div class="promo__body"><h2 class="promo__title">Или пользуйтесь clx.cx бесплатно</h2><p class="promo__text">Бесплатный тариф, без карты. Открытый код под AGPL-3.0.</p></div>
+    <a class="promo__cta" href="https://clx.cx/ru/signin#register">Начать бесплатно <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+</main>
+<footer class="site-foot"><p><a class="site-foot__brand" href="https://301.ru" rel="noopener" aria-label="301.ru" title="301.ru"><svg class="icon" aria-hidden="true"><use href="/icons.svg#i-brand-301"></use></svg></a><a href="/how-it-works">Как это работает</a> · <a href="/open-source">Открытый код</a> · <a href="https://clx.cx/agents" hreflang="en">Для ИИ-агентов</a> · <a href="https://clx.cx/api" hreflang="en">API</a> · <a href="/privacy">Конфиденциальность</a> · <a href="/terms">Условия</a> · <a href="https://github.com/investblog/clx" rel="noopener">Исходный код</a> · <a href="https://301.ru/contact" rel="noopener">Связаться</a></p><p><a href="/clck-alternative">Вместо Кликера</a> · <a href="/liveinternet-alternative">Вместо LiveInternet</a> · <a href="/vs-301">clx и 301.ru</a></p></footer>
+  </body>
+</html>
