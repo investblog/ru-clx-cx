@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ru.clx.cx/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/analytics"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/analytics"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/short-links</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/short-links"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/short-links"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/short-links"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/for-site-generators</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/for-site-generators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/for-site-generators"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/for-site-generators"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/pricing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/pricing"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/pricing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/faq</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/faq"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/clck-alternative</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/clck-alternative"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/liveinternet-alternative</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/liveinternet-alternative"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/vs-301</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/vs-301"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/vs-301"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/vs-301"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/how-it-works"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/open-source</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/open-source"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/open-source"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/open-source"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/terms</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/terms"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/terms"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/terms"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://ru.clx.cx/abuse</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clx.cx/abuse"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clx.cx/abuse"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ru.clx.cx/abuse"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
