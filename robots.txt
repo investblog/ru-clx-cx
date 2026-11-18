@@ -1,0 +1,4 @@
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://ru.clx.cx/sitemap.xml
